@@ -27,7 +27,7 @@ namespace CarSalesApp.Data
             base.OnConfiguring(optionsBuilder);
 
             // Set the database filename(inc. path) for SQLite to use
-            optionsBuilder.UseSqlite($"Data Sourse={DbPath}");
+            optionsBuilder.UseSqlite($"Data Source={DbPath}");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
